@@ -1,0 +1,101 @@
+/* Add this CSS to your stylesheets or create a new stylesheet */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .booking-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .booking-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .booking-card .card-body {
+    padding: 20px;
+  }
+  
+  .booking-details h2,
+  .amount-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .booking-details hr,
+  .amount-details hr {
+    border-color: #007bff;
+  }
+  
+  .booking-details dl,
+  .amount-details dl {
+    margin-bottom: 0;
+  }
+  
+  .booking-details dt,
+  .booking-details dd,
+  .amount-details dt,
+  .amount-details dd {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .booking-details dt,
+  .amount-details dt {
+    font-weight: bold;
+  }
+  
+  .booking-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Loader Styles */
+  .loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Error Styles */
+  .error-container {
+    padding: 20px;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .error-container p {
+    margin: 0;
+  }
+      

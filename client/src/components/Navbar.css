@@ -1,0 +1,88 @@
+/* Navbar.css */
+
+.custom-navbar {
+    background-color: #007bff; /* Blue background color */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-bottom-left-radius: 5px; /* Optional: Adjust the bottom left corner curve */
+    border-bottom-right-radius: 5px; /* Optional: Adjust the bottom right corner curve */
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff; /* White text color for the brand */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 50px; /* Adjust the right margin as needed */
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: #ffffff; /* White color for the toggler icon */
+}
+
+.custom-navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+.custom-navbar .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.custom-navbar .nav-item {
+    margin-right: 15px;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff; /* White text color for the links */
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #28a745; /* Green color on hover */
+    text-decoration: none;
+}
+
+.custom-navbar .nav-item:last-child .nav-link {
+    background-color: #28a745; /* Green color for the last navigation item */
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.custom-navbar .nav-item:last-child .nav-link:hover {
+    background-color: #218838; /* Darker green color on hover */
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: #343a40; /* Dark background color for dropdown menu */
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.custom-navbar .dropdown-item {
+    color: #ffffff; /* White text color for dropdown items */
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background-color: #28a745; /* Green color for dropdown items on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .navbar-brand img {
+    width: 40px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.custom-navbar .short-date {
+    color: #28a745; /* Green color for the short date */
+    font-weight: 500;
+    margin-right: 15px;
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar {
+  background: linear-gradient(to right, #3f9bf1, #4285f4); /* Gradient from blue to darker blue */
+  background-color: rgb(63, 155, 241) !important; /* Fallback color for older browsers */
+  background-size: 200% auto; /* Make the gradient wider to allow movement */
+  transition: background-position 0.3s ease; /* Add transition for smooth movement */
+}
+
+.navbar:hover {
+  background-position: 100% 0; /* Move the gradient to the end when hovering */
+}
+
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.smallimg {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+
+h1 {
+  font-size: 25px !important;
+  color: rgb(0, 0, 0) !important;
+  
+}
+
+.btn {
+  background-color: rgb(4, 163, 255) !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.bs {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+
+.bigimg {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+input,
+select,
+.ant-picker {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 1px solid black !important;
+  width: 100% !important;
+  border-radius: 3px !important;
+  height: 35px !important;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.ant-picker-input input {
+  border: none !important;
+}
+
+p {
+  font-size: 13px !important;
+}
+
+.landing {
+  background: url('https://wallpapershome.com/images/pages/pic_h/1128.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 130px;
+}
+
+.landingBtn {
+  background-color: white !important;
+  color: black !important;
+  margin-top: 20px !important;
+}

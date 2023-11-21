@@ -1,0 +1,169 @@
+/* ProfileScreen.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #1890ff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #333;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #1890ff;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabs */
+  .ant-tabs-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .ant-tabs-tab {
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Profile Title */
+  .profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Profile Information */
+  .profile-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Admin Tag */
+  .admin-tag {
+    background-color: #1890ff;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  /* Profile Button */
+  .profile-button {
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* MyBookingScreen Styles */
+  .booking-section {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .profile-details {
+      flex: 100%;
+    }
+  
+    .profile-info {
+      font-size: 14px;
+    }
+  
+    .profile-button {
+      font-size: 14px;
+    }
+  
+    /* Navigation Styles for Small Screens */
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-link {
+      margin-top: 10px;
+    }
+  
+    /* Add more responsive styles as needed */
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animated Profile */
+  .animated-profile {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  

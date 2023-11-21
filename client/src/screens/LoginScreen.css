@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #007bff;
+  --hover-color: #0056b3;
+  --background-color: #f8f9fa;
+  --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  --border-color: #ced4da;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  animation: fadeIn 1s ease-in; /* Faster animation */
+}
+
+.login-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-content:hover {
+  transform: scale(1.05);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.login-form .form-control {
+  margin-bottom: 10px;
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.form-check-label {
+  color: #6c757d;
+}
+
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* New styles */
+
+.login-box {
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.login-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: var(--hover-color);
+}
+
+.login-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  color: var(--hover-color);
+}

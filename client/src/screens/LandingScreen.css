@@ -1,0 +1,152 @@
+/* LandingScreen.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20220427/pngtree-booking-accommodation-mobile-application-image_1091588.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  overflow: hidden; /* Disable scrolling on the page */
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Animate the navbar on hover */
+.navbar:hover {
+  background-color: #0056b3;
+}
+
+/* Animate the date in the navbar */
+.navbar-date {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: white;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar:hover .navbar-date {
+  opacity: 1;
+}
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Add animation to landing-container */
+.landing-container {
+  animation: fadeInUp 1s ease;
+}
+
+.landing-content {
+  text-align: center;
+}
+
+/* Add animation to landing-title */
+.landing-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: scaleIn 1s ease, glow 2s ease-in-out infinite;
+}
+
+/* Add animation to landing-subtitle */
+.landing-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: fadeInLeft 1s ease;
+}
+
+/* Add animation to landing-btn */
+.landing-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-btn:hover {
+  background-color: #004080;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Define keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Define a new keyframe animation for glowing effect */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  50% {
+    text-shadow: 0 0 20px #28a745, 0 0 30px #28a745, 0 0 40px #28a745;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+}
+
+/* Enable scrolling for specific elements */
+.scrollable-content {
+  overflow-y: scroll;
+}
